@@ -85,6 +85,21 @@
 .vocabCard h3 { margin: 0 0 4px; color: var(--text-strong); font: var(--text-h4); }
 .vocabCard p { margin: 0; color: var(--text-muted); font: var(--text-small); }
 .iconButton { display: grid; width: 36px; height: 36px; flex: 0 0 36px; place-items: center; border: 1px solid var(--border-default); border-radius: 50%; background: white; color: var(--navy-700); cursor: pointer; }
+.greetingCard { display: flex; flex-direction: column; gap: 20px; padding: 24px; border: 1px solid var(--border-subtle); border-radius: var(--radius-card); background: white; }
+.greetingContent { display: grid; grid-template-columns: 84px minmax(0, 1fr); align-items: center; gap: 20px; }
+.greetingPlay { display: flex; width: 72px; min-height: 72px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 0; border-radius: 50%; background: var(--navy-700); color: white; cursor: pointer; font: var(--text-caption); transition: background 160ms var(--ease-out); }
+.greetingPlay:hover { background: var(--navy-800); }
+.greetingContent audio { display: none; }
+.greetingGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.greetingTile { display: grid; min-height: 68px; place-items: center; padding: 8px; border: 1px solid var(--border-subtle); border-radius: var(--radius-card); background: var(--grey-50); color: var(--text-strong); cursor: pointer; font: var(--text-h4); text-align: center; transition: background 160ms var(--ease-out), border-color 160ms var(--ease-out), color 160ms var(--ease-out); }
+.greetingTile:hover:not(:disabled) { border-color: var(--navy-400); background: var(--navy-50); }
+.greetingTile:disabled { cursor: default; }
+.greetingCorrect { border-color: var(--green-600); background: var(--green-100); color: var(--green-700); }
+.greetingWrong { border-color: var(--red-600); background: var(--red-100); color: var(--red-700); }
+.greetingTextBlur { filter: blur(3px); }
+.greetingFeedback { grid-column: 1 / -1; margin: 0; color: var(--text-muted); font: var(--text-label); }
+.feedbackCorrect { color: var(--green-700); }
+.feedbackWrong { color: var(--red-700); }
 .dialogIntro { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .dialogCard { display: flex; flex-direction: column; gap: 16px; padding: 32px; border: 1px solid var(--border-subtle); border-radius: var(--radius-card); }
 .dialogLine { display: grid; grid-template-columns: 110px minmax(0, 1fr); align-items: baseline; gap: 16px; }
@@ -261,6 +276,11 @@
   .moduleNav { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .lessonCardGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lessonPage { padding-top: 32px; }
+  .greetingCard { padding: 20px; }
+  .greetingContent { grid-template-columns: 64px minmax(0, 1fr); gap: 12px; }
+  .greetingPlay { width: 60px; min-height: 60px; }
+  .greetingGrid { gap: 8px; }
+  .greetingTile { min-height: 58px; font-size: 18px; }
   .courseHero { min-height: 320px; aspect-ratio: 4 / 3; }
   .courseHeroPanel { bottom: 0; left: 0; width: min(660px, 100%); padding: 20px; }
   .courseHeroPanel h1 { font-size: 44px; }
@@ -296,6 +316,9 @@
   .dialogLine { grid-template-columns: 1fr; gap: 2px; }
   .exercisePrompt { font-size: 20px; }
   .answerOptions { padding-left: 0; }
+  .greetingCard { padding: 16px; }
+  .greetingCard h2 { font-size: 24px; }
+  .greetingContent { grid-template-columns: 1fr; justify-items: start; }
   .activityHero { padding: 48px 16px 0; }
   .activityHero h1 { font-size: 42px; }
   .activityCard { padding: 18px; }
