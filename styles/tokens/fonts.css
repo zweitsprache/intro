@@ -1,0 +1,4 @@
+/* Sofia Sans Semi Condensed — primary typeface (OFL, variable wght 1–1000). Shadows Into Light — handwritten accents only (OFL). */
+@font-face{font-family:"Sofia Sans Semi Condensed";font-style:normal;font-weight:1 1000;font-display:swap;src:url("/fonts/sofia-sans-semi-condensed/SofiaSansSemiCondensed-VariableFont_wght.ttf") format("truetype")}
+@font-face{font-family:"Sofia Sans Semi Condensed";font-style:italic;font-weight:1 1000;font-display:swap;src:url("/fonts/sofia-sans-semi-condensed/SofiaSansSemiCondensed-Italic-VariableFont_wght.ttf") format("truetype")}
+@font-face{font-family:"Shadows Into Light";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/shadows-into-light/ShadowsIntoLight-Regular.ttf") format("truetype")}

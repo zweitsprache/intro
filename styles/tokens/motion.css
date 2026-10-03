@@ -1,0 +1,10 @@
+/* dazlet motion — calm, directional, no bounce. */
+:root{
+--ease-out:cubic-bezier(.2,.7,.2,1);/* @kind other */
+--ease-in-out:cubic-bezier(.65,0,.35,1);/* @kind other */
+--ease-in:cubic-bezier(.5,0,.75,0);/* @kind other */
+--dur-instant:100ms;/* @kind other */--dur-fast:160ms;/* @kind other */--dur-base:240ms;/* @kind other */--dur-slow:400ms;/* @kind other */
+/* Video */
+--dur-video-in:600ms;/* @kind other */--dur-video-out:400ms;/* @kind other */--dur-video-hold:2400ms;/* @kind other */--stagger:80ms;/* @kind other */
+--travel-sm:8px;/* @kind other */--travel-md:24px;/* @kind other */--travel-video:48px;/* @kind other */
+}

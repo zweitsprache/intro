@@ -1,0 +1,49 @@
+/* dazlet colour tokens — navy / grey / white. */
+:root{
+/* Navy — brand primary */
+--navy-950:#0A1428;--navy-900:#0E1A33;--navy-800:#16254A;--navy-700:#1F3160;--navy-600:#2C4178;--navy-500:#43588F;--navy-400:#6A7DAD;--navy-300:#9AA8CA;--navy-200:#C7CFE3;--navy-100:#E6EAF3;--navy-50:#F3F5FA;
+/* Grey — cool neutral */
+--grey-900:#1D2026;--grey-800:#2E323A;--grey-700:#474C56;--grey-600:#5E6470;--grey-500:#7F8590;--grey-400:#A3A8B1;--grey-300:#C6CAD1;--grey-200:#E0E3E8;--grey-100:#EEF0F3;--grey-50:#F7F8FA;
+--white:#FFFFFF;
+/* Semantic (muted, corporate) */
+--green-700:#23613F;--green-600:#2F7D55;--green-100:#E3F1E9;
+--amber-700:#8A5A12;--amber-600:#B7791F;--amber-100:#F8EEDC;
+--red-700:#8E2C2C;--red-600:#B23A3A;--red-100:#F7E4E4;
+
+/* ── Semantic aliases ── */
+--brand:var(--navy-700);--brand-strong:var(--navy-900);--brand-soft:var(--navy-100);
+
+--text-strong:var(--navy-900);
+--text-body:var(--grey-800);
+--text-muted:var(--grey-600);
+--text-subtle:var(--grey-500);
+--text-on-brand:var(--white);
+--text-on-brand-muted:var(--navy-200);
+--text-link:var(--navy-600);--text-link-hover:var(--navy-800);
+
+--surface-page:var(--white);
+--surface-subtle:var(--grey-50);
+--surface-muted:var(--grey-100);
+--surface-card:var(--white);
+--surface-brand:var(--navy-700);
+--surface-brand-deep:var(--navy-900);
+--surface-brand-soft:var(--navy-50);
+--surface-overlay:rgba(10,20,40,.56);
+
+--border-subtle:var(--grey-200);
+--border-default:var(--grey-300);
+--border-strong:var(--grey-500);
+--border-brand:var(--navy-700);
+--border-on-brand:rgba(255,255,255,.16);
+
+--action-primary:var(--navy-700);--action-primary-hover:var(--navy-800);--action-primary-press:var(--navy-900);
+--action-secondary:var(--white);--action-secondary-hover:var(--grey-50);--action-secondary-press:var(--grey-100);
+--action-ghost-hover:var(--navy-50);--action-ghost-press:var(--navy-100);
+--action-disabled-bg:var(--grey-100);--action-disabled-fg:var(--grey-400);
+--focus-ring:var(--navy-500);
+
+--status-success:var(--green-600);--status-success-fg:var(--green-700);--status-success-bg:var(--green-100);
+--status-warning:var(--amber-600);--status-warning-fg:var(--amber-700);--status-warning-bg:var(--amber-100);
+--status-danger:var(--red-600);--status-danger-fg:var(--red-700);--status-danger-bg:var(--red-100);
+--status-info:var(--navy-500);--status-info-fg:var(--navy-700);--status-info-bg:var(--navy-100);
+}

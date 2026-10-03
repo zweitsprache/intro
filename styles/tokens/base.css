@@ -1,0 +1,9 @@
+/* Minimal element defaults so plain HTML picks up the brand. */
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:var(--text-body-md);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{color:var(--text-strong);margin:0;text-wrap:balance}
+p{text-wrap:pretty}
+a{color:var(--text-link);text-decoration:underline;text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{color:var(--text-link-hover)}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+::selection{background:var(--navy-200);color:var(--navy-900)}
